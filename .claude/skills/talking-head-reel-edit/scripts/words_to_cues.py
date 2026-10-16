@@ -14,6 +14,7 @@ import sys
 
 FX_SPANS = {"push", "ring", "rec"}            # take start and end
 FX_POINTS = {"punch", "blurzoom", "flash", "shake", "tap"}   # take one time
+CUT_FX = {"blurzoom": 0, "flash": 0, "shake": 5}   # these sit on a footage cut (frames after t)
 FLAGS = {"strike", "top", "low", "big", "slam", "behind", "rec-dot"}
 
 
@@ -141,8 +142,10 @@ def caption_group(text, flags, align, n, fps):
         elif f == "rec-dot":
             g["recDot"] = {"t": g["hero"][-1]["t"] + 4.0 / fps}
         elif f == "strike":
+            # Draw once the hero is readable, just before the next words if they come later.
             after_hero = g["tail"] or g["top"]
-            g["strike"] = {"t": after_hero[0]["t"] - 0.2 if after_hero else g["hero"][-1]["t"] + 0.4}
+            landed = g["hero"][-1]["t"] + 0.2
+            g["strike"] = {"t": max(landed + 0.05, after_hero[0]["t"] - 0.2) if after_hero else landed}
         elif f in FLAGS:
             g[f] = True
         else:
@@ -152,11 +155,14 @@ def caption_group(text, flags, align, n, fps):
 
 def build(plan_lines, words, duration, fps, width, height):
     align = Aligner(words)
-    groups, fx = [], []
+    groups, fx, cuts = [], [], []
     last_caption = None
     for n, raw in enumerate(plan_lines, 1):
         line = raw.strip()
         if not line or line.startswith("#"):
+            continue
+        if line.startswith("@cut"):
+            cuts.extend(float(x) for x in line.split()[1:])
             continue
         if line.startswith("@"):
             fx.append(parse_fx(line, n))
@@ -198,6 +204,20 @@ def build(plan_lines, words, duration, fps, width, height):
             while j < len(spoken) and spoken[j]["kind"] == "card":
                 j += 1
         g["end"] = spoken[j]["start"] if j < len(spoken) else duration
+    # A footage cut after a group's last word ends it there, so it never spills into the next shot.
+    for f in fx:
+        if f["type"] in CUT_FX and "t" in f:
+            cuts.append(f["t"] + CUT_FX[f["type"]] / fps)
+    for i, g in enumerate(spoken):
+        last = max(w["t"] for k in ("lead", "hero", "top", "tail", "words") for w in g.get(k, []))
+        if g["kind"] == "card":   # stacked cards hold until the last card in the run is spoken
+            j = i
+            while j + 1 < len(spoken) and spoken[j + 1]["kind"] == "card":
+                j += 1
+            last = max(w["t"] for w in spoken[j]["words"])
+        inside = [c for c in cuts if last < c < g["end"]]
+        if inside:
+            g["end"] = min(inside)
     slot = 0
     for i, g in enumerate(spoken):
         if g["kind"] == "card":

@@ -73,11 +73,14 @@ being on *Camera Stresses* you out {top}
 [bubble +0.53] Please turn it off...
 [card:warning] what to say?
 we take it off *Your plate*
+@cut 1.63 3.13 4.53 6.2 14.77
 @punch 0.27 from=125 start=0
 @shake 8.1
 ```
 
-Place every transition (`@blurzoom`, `@flash`, `@shake`) on an actual footage cut.
+Add an `@cut` line with every footage cut time, so each caption ends on the cut instead of spilling
+a few frames into the next shot. Place every transition (`@blurzoom`, `@flash`, `@shake`) on an
+actual footage cut.
 
 ### 4. Build
 

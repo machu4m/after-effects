@@ -11,6 +11,9 @@ even if *You record* you are unsure {rec-dot}
 [card:x] how it turn to revenue?
 we take it off *Your plate*
 
+# Footage cuts (seconds): a caption ends on the first cut after its last word.
+@cut 1.63 3.13 4.53 6.2 14.77
+
 # Camera moves and transitions (seconds). Put each transition on the footage cut.
 @punch 0.27 from=125 start=0
 @blurzoom 3.13

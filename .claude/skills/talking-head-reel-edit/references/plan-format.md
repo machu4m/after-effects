@@ -40,7 +40,7 @@ we take it off *Your plate*
 | `{y=0.4}` | Hero baseline at that fraction of frame height |
 | `{big}` | Hero ×1.45 (up to 92% of frame width); small rows scale with it |
 | `{slam}` | Hero appears in one frame instead of the blur-scale land |
-| `{strike}` | Red strike-through over the hero, 0.2 s before the next row's first word |
+| `{strike}` | Red strike-through over the hero once it has landed (+0.25 s), or 0.2 s before the next row's first word if that's later |
 | `{rec-dot}` | Red dot pops at the hero's top-right |
 | `{icon:plane}` | Send icon flies in with the hero and lands left of the tail row |
 | `{behind}` | Copies the footage above the caption as "ROTO subject …" for you to Roto Brush |
@@ -62,8 +62,13 @@ is on screen at the same time, otherwise at upper right.
 
 `@name times key=value…`, times in seconds on the comp timeline.
 
+List the footage cuts with `@cut`. Without it, a caption holds until the next caption's first word,
+which can be a few frames into the next shot. `@blurzoom`/`@flash` (at t) and `@shake` (t + 5 frames)
+count as cuts automatically.
+
 | Line | Times | Options |
 |---|---|---|
+| `@cut a b c …` | every footage cut | — (not an effect: each caption ends on the first cut after its last word) |
 | `@punch t` | hero land time | `from=125` (start scale %), `start=` (when the punched-in hold begins, e.g. the cut) |
 | `@push a b` | start, end | `to=108` |
 | `@blurzoom t` | the cut | — |

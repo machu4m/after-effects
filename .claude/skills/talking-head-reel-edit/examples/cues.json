@@ -45,7 +45,7 @@
     }
    ],
    "start": 0.033,
-   "end": 1.667
+   "end": 1.63
   },
   {
    "kind": "caption",
@@ -78,7 +78,7 @@
     "type": "plane",
     "t": 1.833
    },
-   "end": 3.133
+   "end": 3.13
   },
   {
    "kind": "caption",
@@ -108,9 +108,9 @@
    ],
    "start": 3.133,
    "strike": {
-    "t": 3.467
+    "t": 3.517
    },
-   "end": 4.533
+   "end": 4.53
   },
   {
    "kind": "caption",
@@ -142,7 +142,7 @@
    "big": true,
    "slam": true,
    "behind": true,
-   "end": 6.4
+   "end": 6.2
   },
   {
    "kind": "caption",
@@ -266,7 +266,7 @@
     }
    ],
    "start": 10.167,
-   "end": 14.8,
+   "end": 14.77,
    "slot": 0
   },
   {
@@ -295,7 +295,7 @@
     }
    ],
    "start": 11.867,
-   "end": 14.8,
+   "end": 14.77,
    "slot": 1
   },
   {
