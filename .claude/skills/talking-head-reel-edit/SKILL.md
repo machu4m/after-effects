@@ -41,8 +41,11 @@ Keep these when adapting the style; they matter more than the exact pixels.
 - **Word timestamps.** Use a Premiere/CapCut transcript or SRT, Whisper with `--word_timestamps True`,
   or a list from the user. If none exists and you can't make one, ask for it. Guessing timings
   breaks the style.
-- **Brand constraints.** Accent colour and fonts, if the user has them. Otherwise use the defaults
-  (lime `#E0FD56`, Inter).
+- **Colour and fonts.** Use what the user asks for: their brand colour, or the colour they name
+  ("neon green" means `#39FF14`, not the default lime). Fall back to lime `#E0FD56` and Inter only when
+  they say nothing. The accent just has to stay consistent and pop on their footage.
+- **Their tool.** The After Effects scripts are for users working in After Effects with this skill's
+  files. Everyone else gets the same edit described in their own tool.
 
 ### 2. Map beats and pick hero words
 
@@ -117,9 +120,23 @@ With no comp open, it builds a 1080×1920 comp of graphics only, for previewing.
 
 ## Not using After Effects?
 
-Give the user the plan (step 3) plus the numbers in `references/style-spec.md`. Its last section maps
-each element to Premiere, Resolve and CapCut. If they only want an analysis of a reel, use the method
-at the end of `references/reference-reel-breakdown.md`.
+Write the edit as a beat-by-beat plan in their tool's terms. Take the numbers from
+`references/style-spec.md`; its last section maps each element to Premiere, Resolve and CapCut. Leave
+out plan.txt, cues.json, the scripts and any paths inside this skill. A CapCut user or an outside editor
+can't use them, and pointing at files they don't have makes the plan worse.
+
+On a phone (CapCut, VN, Instagram's editor), lead with a **core pass** they can finish in under an hour:
+
+1. Per-word captions with one accent hero per line.
+2. Punch-ins on the cuts.
+3. The one B-roll insert.
+4. One graphic set, cleared on the solution line.
+
+Mark everything else (ring, bubble, send icon, flash, shake) as optional extras. Say roughly how long
+each part takes.
+
+If the user only wants an analysis of a reel, use the method at the end of
+`references/reference-reel-breakdown.md`.
 
 ## Files
 
