@@ -1,0 +1,383 @@
+{
+ "version": 1,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 16.9,
+ "groups": [
+  {
+   "kind": "caption",
+   "pos": "mid",
+   "lead": [
+    {
+     "text": "If",
+     "t": 0.033
+    },
+    {
+     "text": "the",
+     "t": 0.133
+    }
+   ],
+   "hero": [
+    {
+     "text": "Prospects",
+     "t": 0.267
+    }
+   ],
+   "top": [
+    {
+     "text": "have",
+     "t": 0.533
+    },
+    {
+     "text": "to",
+     "t": 0.633
+    }
+   ],
+   "tail": [
+    {
+     "text": "meet",
+     "t": 1.0
+    },
+    {
+     "text": "you",
+     "t": 1.133
+    }
+   ],
+   "start": 0.033,
+   "end": 1.667
+  },
+  {
+   "kind": "caption",
+   "pos": "mid",
+   "lead": [
+    {
+     "text": "to",
+     "t": 1.667
+    }
+   ],
+   "hero": [
+    {
+     "text": "Understand",
+     "t": 1.833
+    }
+   ],
+   "top": [],
+   "tail": [
+    {
+     "text": "your",
+     "t": 2.267
+    },
+    {
+     "text": "value",
+     "t": 2.367
+    }
+   ],
+   "start": 1.667,
+   "icon": {
+    "type": "plane",
+    "t": 1.833
+   },
+   "end": 3.133
+  },
+  {
+   "kind": "caption",
+   "pos": "mid",
+   "lead": [
+    {
+     "text": "your",
+     "t": 3.133
+    }
+   ],
+   "hero": [
+    {
+     "text": "Content",
+     "t": 3.267
+    }
+   ],
+   "top": [],
+   "tail": [
+    {
+     "text": "is",
+     "t": 3.667
+    },
+    {
+     "text": "failing",
+     "t": 3.7
+    }
+   ],
+   "start": 3.133,
+   "strike": {
+    "t": 3.467
+   },
+   "end": 4.533
+  },
+  {
+   "kind": "caption",
+   "pos": "top",
+   "lead": [
+    {
+     "text": "You",
+     "t": 4.533
+    },
+    {
+     "text": "know",
+     "t": 4.6
+    }
+   ],
+   "hero": [
+    {
+     "text": "content",
+     "t": 5.133
+    }
+   ],
+   "top": [],
+   "tail": [
+    {
+     "text": "matters",
+     "t": 5.567
+    }
+   ],
+   "start": 4.533,
+   "big": true,
+   "slam": true,
+   "behind": true,
+   "end": 6.4
+  },
+  {
+   "kind": "caption",
+   "pos": "top",
+   "lead": [
+    {
+     "text": "being",
+     "t": 6.4
+    },
+    {
+     "text": "on",
+     "t": 6.5
+    }
+   ],
+   "hero": [
+    {
+     "text": "Camera",
+     "t": 6.667
+    },
+    {
+     "text": "Stresses",
+     "t": 6.9
+    }
+   ],
+   "top": [],
+   "tail": [
+    {
+     "text": "you",
+     "t": 7.267
+    },
+    {
+     "text": "out",
+     "t": 7.4
+    }
+   ],
+   "start": 6.4,
+   "end": 8.167
+  },
+  {
+   "kind": "bubble",
+   "words": [
+    {
+     "text": "Please",
+     "t": 7.03
+    },
+    {
+     "text": "turn",
+     "t": 7.23
+    },
+    {
+     "text": "it",
+     "t": 7.43
+    },
+    {
+     "text": "off...",
+     "t": 7.63
+    }
+   ],
+   "start": 6.93,
+   "end": 8.167
+  },
+  {
+   "kind": "caption",
+   "pos": "mid",
+   "lead": [
+    {
+     "text": "even",
+     "t": 8.167
+    },
+    {
+     "text": "if",
+     "t": 8.333
+    }
+   ],
+   "hero": [
+    {
+     "text": "You",
+     "t": 8.633
+    },
+    {
+     "text": "record",
+     "t": 8.733
+    }
+   ],
+   "top": [],
+   "tail": [
+    {
+     "text": "you",
+     "t": 9.367
+    },
+    {
+     "text": "are",
+     "t": 9.5
+    },
+    {
+     "text": "unsure",
+     "t": 9.6
+    }
+   ],
+   "start": 8.167,
+   "recDot": {
+    "t": 8.866
+   },
+   "end": 10.167
+  },
+  {
+   "kind": "card",
+   "icon": "warning",
+   "words": [
+    {
+     "text": "what",
+     "t": 10.267
+    },
+    {
+     "text": "to",
+     "t": 10.4
+    },
+    {
+     "text": "say?",
+     "t": 10.567
+    }
+   ],
+   "start": 10.167,
+   "end": 14.8,
+   "slot": 0
+  },
+  {
+   "kind": "card",
+   "icon": "x",
+   "words": [
+    {
+     "text": "how",
+     "t": 11.967
+    },
+    {
+     "text": "it",
+     "t": 12.1
+    },
+    {
+     "text": "turn",
+     "t": 12.2
+    },
+    {
+     "text": "to",
+     "t": 12.3
+    },
+    {
+     "text": "revenue?",
+     "t": 12.4
+    }
+   ],
+   "start": 11.867,
+   "end": 14.8,
+   "slot": 1
+  },
+  {
+   "kind": "caption",
+   "pos": "mid",
+   "lead": [
+    {
+     "text": "we",
+     "t": 14.8
+    },
+    {
+     "text": "take",
+     "t": 14.9
+    },
+    {
+     "text": "it",
+     "t": 15.033
+    },
+    {
+     "text": "off",
+     "t": 15.133
+    }
+   ],
+   "hero": [
+    {
+     "text": "Your",
+     "t": 15.733
+    },
+    {
+     "text": "plate",
+     "t": 15.833
+    }
+   ],
+   "top": [],
+   "tail": [],
+   "start": 14.8,
+   "end": 16.9
+  }
+ ],
+ "fx": [
+  {
+   "type": "punch",
+   "t": 0.27,
+   "from": 125.0,
+   "start": 0.0
+  },
+  {
+   "type": "blurzoom",
+   "t": 3.13
+  },
+  {
+   "type": "flash",
+   "t": 4.53
+  },
+  {
+   "type": "push",
+   "start": 4.6,
+   "end": 6.2,
+   "to": 108.0
+  },
+  {
+   "type": "ring",
+   "start": 6.2,
+   "end": 8.27,
+   "x": 0.5,
+   "y": 0.4,
+   "r": 0.29
+  },
+  {
+   "type": "shake",
+   "t": 8.1
+  },
+  {
+   "type": "rec",
+   "start": 8.83,
+   "end": 14.77
+  },
+  {
+   "type": "tap",
+   "t": 16.53,
+   "x": 0.62,
+   "y": 0.58
+  }
+ ]
+}

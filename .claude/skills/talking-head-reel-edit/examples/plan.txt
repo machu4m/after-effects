@@ -1,0 +1,22 @@
+# Plan for the reference reel (references/reference-reel-breakdown.md).
+# One line = one caption group. *hero* = lime word(s). " / " splits the top-right line from the line below.
+If the *Prospects* have to / meet you
+to *Understand* your value {icon:plane}
+your *Content* is failing {strike}
+You know *content* matters {top} {big} {slam} {behind}
+being on *Camera Stresses* you out {top}
+[bubble +0.53] Please turn it off...
+even if *You record* you are unsure {rec-dot}
+[card:warning] what to say?
+[card:x] how it turn to revenue?
+we take it off *Your plate*
+
+# Camera moves and transitions (seconds). Put each transition on the footage cut.
+@punch 0.27 from=125 start=0
+@blurzoom 3.13
+@flash 4.53
+@push 4.6 6.2 to=108
+@ring 6.2 8.27 x=0.5 y=0.40 r=0.29
+@shake 8.1
+@rec 8.83 14.77
+@tap 16.53 x=0.62 y=0.58
